@@ -1,0 +1,394 @@
+:root {
+    --color-primario: #00a8cc;
+    --color-secundario: #007792;
+    --fondo-oscuro: #0f0f1a;
+    --fondo-tarjeta: rgba(15, 15, 26, 0.8);
+    --texto-claro: #e0e0e0;
+    --texto-gris: #aaaaaa;
+    --fondo-barra-contacto: rgba(0, 168, 204, 0.1);
+    --borde-boton: #005a6e;
+}
+
+/* Estilos de la barra de contacto */
+.barra-contacto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--fondo-barra-contacto);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 168, 204, 0.3);
+}
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+
+.item-contacto {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.item-contacto:hover {
+    color: var(--color-primario);
+    background-color: rgba(0, 168, 204, 0.1);
+}
+
+.icono-contacto {
+    font-size: 1rem;
+}
+
+/* Ajuste del contenido principal para la barra de contacto */
+.seccion-portafolio {
+    padding-top: 50px;
+}
+
+/* Resto de los estilos */
+.seccion-portafolio {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--fondo-oscuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+#particulas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.contenedor-principal {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.perfil {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 0.5rem;
+    margin-top: 2.5rem;
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--color-primario);
+    box-shadow: 0 0 15px rgba(0, 168, 204, 0.4);
+    position: relative;
+    z-index: 2;
+}
+
+.efecto-luz {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 168, 204, 0.3) 0%, transparent 70%);
+    animation: brillo 3s infinite alternate;
+    z-index: 1;
+}
+
+.contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    color: var(--texto-claro);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: var(--color-primario);
+    margin-bottom: 1.5rem;
+    min-height: 1.8rem;
+    font-weight: 400;
+}
+
+.habilidades {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.categoria {
+    background: var(--fondo-tarjeta);
+    border-radius: 8px;
+    padding: 1.2rem;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 168, 204, 0.2);
+    transition: all 0.3s ease;
+}
+
+.categoria:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-primario);
+}
+
+.titulo-categoria {
+    color: var(--color-primario);
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 168, 204, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.tecnologias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 0.8rem;
+}
+
+.tecnologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem;
+    transition: all 0.3s ease;
+}
+
+.tecnologia:hover {
+    transform: scale(1.05);
+}
+
+.icono {
+    font-size: 1.8rem;
+    color: var(--color-primario);
+}
+
+.nombre {
+    font-size: 0.75rem;
+    color: var(--texto-gris);
+    text-align: center;
+    word-break: break-word;
+}
+
+.botones-container {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.botones-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.boton-primario,
+.boton-secundario {
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.boton-primario {
+    background-color: var(--color-primario);
+    color: var(--fondo-oscuro);
+    border: 2px solid var(--borde-boton);
+}
+
+.boton-primario:hover {
+    background-color: var(--color-secundario);
+    color: var(--texto-claro);
+    box-shadow: 0 0 10px rgba(0, 168, 204, 0.4);
+}
+
+.boton-secundario {
+    background-color: transparent;
+    color: var(--texto-claro);
+    border: 2px solid var(--texto-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.boton-secundario:hover {
+    background-color: var(--texto-claro);
+    color: var(--fondo-oscuro);
+}
+
+.icono-descarga {
+    font-size: 1rem;
+}
+
+@keyframes brillo {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 0.7;
+    }
+}
+
+/* Media Queries para Responsive */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        gap: 1.2rem;
+    }
+
+    .perfil {
+        width: 140px;
+        height: 140px;
+    }
+
+    .titulo-principal {
+        font-size: 1.6rem;
+    }
+
+    .subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .habilidades {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .tecnologias {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    }
+
+    .botones-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botones-columna {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .seccion-portafolio {
+        padding: 1rem;
+        padding-top: 50px;
+    }
+
+    .contenedor-principal {
+        padding: 0.5rem;
+    }
+
+    .perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    .titulo-principal {
+        font-size: 1.4rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .categoria {
+        padding: 1rem;
+    }
+
+    .item-contacto span {
+        display: none;
+    }
+
+    .item-contacto {
+        padding: 0.5rem;
+    }
+
+    .icono-contacto {
+        font-size: 1.1rem;
+    }
+
+    .boton-primario,
+    .boton-secundario {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .tecnologias {
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        gap: 0.6rem;
+    }
+
+    .icono {
+        font-size: 1.5rem;
+    }
+
+    .nombre {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .tecnologias {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    }
+
+    .icono {
+        font-size: 1.3rem;
+    }
+
+    .titulo-principal {
+        font-size: 1.3rem;
+    }
+}
