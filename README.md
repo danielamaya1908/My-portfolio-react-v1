@@ -31,15 +31,12 @@ A modern, responsive, and feature-rich developer portfolio built with **React**.
 ## 📦 Installation
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
 
-# 2. Install dependencies
+# 1. Install dependencies
 yarn install
 
-# 3. Run in development mode
+# 2. Run in development mode
 yarn dev
 
-# 4. Build for production
+# 3. Build for production
 yarn build
