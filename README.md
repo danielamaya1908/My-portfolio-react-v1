@@ -35,8 +35,8 @@ A modern, responsive, and feature-rich developer portfolio built with **React**.
 # 1. Install dependencies
 yarn install
 
-# 2. Run in development mode
-yarn dev
-
-# 3. Build for production
+# 2. Build for production
 yarn build
+
+# 3. Run in development mode
+yarn dev
