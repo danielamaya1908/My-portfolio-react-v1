@@ -36,35 +36,32 @@ function About({ isOpen, onClose }) {
             <div className="about-text">
               <p>
                 Soy un{" "}
-                <span className="highlight">Desarrollador Full Stack</span> con
-                más de 3 años de experiencia en la creación de soluciones
-                tecnológicas innovadoras.
+                <span className="highlight">Desarrollador Senior Full Stack</span> con
+                más de 3 años de experiencia liderando equipos de tecnología y creando soluciones
+                empresariales innovadoras.
               </p>
               <p>
-                Especializado en{" "}
-                <span className="highlight">JavaScript/TypeScript</span>,{" "}
-                <span className="highlight">Node.js</span> y{" "}
-                <span className="highlight">React</span>, con sólidos
-                conocimientos en diseño de bases de datos y arquitectura de
-                software.
+                Especializado en <span className="highlight">Node.js</span>,{" "}
+                <span className="highlight">NestJS</span>,{" "}
+                <span className="highlight">React</span> y{" "}
+                <span className="highlight">Next.js</span>, con sólidos
+                conocimientos en arquitectura backend, bases de datos (PostgreSQL, MongoDB, MySQL) y DevOps.
               </p>
               <p>
-                Mi enfoque combina eficiencia técnica con diseño intuitivo,
-                siempre buscando implementar las mejores prácticas y tecnologías
-                emergentes.
+                Experto en infraestructura cloud (AWS, Azure, GCP), Kubernetes, Docker, CI/CD, automatizaciones con n8n y Zapier, además de Web3 y Blockchain.
               </p>
               <div className="about-stats">
                 <div className="stat-item">
-                  <div className="stat-value">50+</div>
-                  <div className="stat-label">Proyectos completados</div>
+                  <div className="stat-value">5+</div>
+                  <div className="stat-label">Años de experiencia</div>
                 </div>
                 <div className="stat-item">
-                  <div className="stat-value">10+</div>
-                  <div className="stat-label">Tecnologías dominadas</div>
+                  <div className="stat-value">30+</div>
+                  <div className="stat-label">Tecnologías</div>
                 </div>
                 <div className="stat-item">
-                  <div className="stat-value">100%</div>
-                  <div className="stat-label">Compromiso</div>
+                  <div className="stat-value">125+</div>
+                  <div className="stat-label">Profesionales capacitados</div>
                 </div>
               </div>
             </div>

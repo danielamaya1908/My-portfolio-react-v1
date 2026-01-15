@@ -16,13 +16,13 @@ function SoftSkills({ isOpen, onClose }) {
   if (!visible) return null;
 
   const softSkills = [
-    "Trabajo en equipo bajo metodologías ágiles como Scrum",
-    "Liderazgo para coordinar proyectos y equipos",
-    "Proactividad y adaptabilidad",
-    "Creatividad para resolver problemas",
-    "Comunicación empática con clientes y colegas",
-    "Responsabilidad y compromiso bajo presión",
-    "Curiosidad tecnológica y aprendizaje continuo",
+    "Trabajo en equipo bajo metodologías ágiles (Scrum, Kanban)",
+    "Liderazgo técnico y coordinación de proyectos",
+    "Comunicación clara con clientes y equipos",
+    "Proactividad y resolutividad",
+    "Adaptabilidad a nuevas tecnologías y entornos",
+    "Alto rendimiento bajo presión",
+    "Aprendizaje continuo y curiosidad tecnológica",
   ];
 
   return (
@@ -37,15 +37,7 @@ function SoftSkills({ isOpen, onClose }) {
 
           <div className="softskills-description">
             <p>
-              Destaco por mi capacidad de trabajo en equipo bajo metodologías
-              ágiles como Scrum, junto con habilidades de liderazgo para
-              coordinar proyectos y equipos. Soy proactivo, adaptable y
-              creativo, lo que me permite resolver problemas de forma eficiente
-              y aportar ideas innovadoras. Manejo bien la comunicación empática
-              para interactuar efectivamente con clientes y colegas, y trabajo
-              con responsabilidad y compromiso, incluso bajo presión. Además,
-              cuento con una fuerte curiosidad tecnológica que me impulsa a
-              aprender continuamente nuevas herramientas y tendencias.
+              Destaco por mi trabajo en equipo con metodologías ágiles como Scrum, Kanban y seguimiento Weekly, asegurando organización, prioridad y cumplimiento de entregas. Tengo habilidades de liderazgo técnico, comunicación clara y enfoque en resultados. Soy proactivo, adaptable y resolutivo, manteniendo alto rendimiento bajo presión. Mi constante aprendizaje me permite incorporar nuevas tecnologías y aportar soluciones innovadoras.
             </p>
           </div>
 

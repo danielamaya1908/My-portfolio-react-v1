@@ -17,9 +17,9 @@ function Education({ isOpen, onClose }) {
 
   const educationData = [
     {
-      institution: "Henry Instituto, Argentina",
-      degree: "Desarrollador Full Stack",
-      status: "Culminado",
+      institution: "Universidad Área Andina, Bogotá - Colombia",
+      degree: "Ingeniero de Sistemas",
+      status: "En Curso",
     },
     {
       institution: "Sena, Valledupar, Cesar - Colombia",
