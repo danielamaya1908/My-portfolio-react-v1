@@ -59,10 +59,11 @@ import "../styles/Home.css";
 function Home() {
   const [text] = useTypewriter({
     words: [
-      "Desarrollador de Software",
-      "Ingeniero de Datos en Formación",
-      "Especialista en Bases de Datos",
-      "Desarrollador Full Stack",
+      "Desarrollador Senior Full Stack",
+      "Líder de Tecnología",
+      "Especialista en Cloud & DevOps",
+      "Arquitecto de Soluciones",
+      "Ingeniero en Formación",
     ],
     loop: true,
     typeSpeed: 70,
@@ -81,41 +82,45 @@ function Home() {
 
   // Tecnologías organizadas por categorías
   const habilidades = {
-    "Lenguajes y Frameworks": [
-      { icon: <SiTypescript />, nombre: "TypeScript" },
-      { icon: <FaNodeJs />, nombre: "Node.js" },
-      { icon: <FaPython />, nombre: "Python" },
-      { icon: <SiDotnet />, nombre: ".NET" },
-      { icon: <SiPhp />, nombre: "PHP" },
-      { icon: <SiLaravel />, nombre: "Laravel" },
-      { icon: <SiExpress />, nombre: "Express" },
-      { icon: <FaServer />, nombre: "ParseServer" },
-    ],
-    Frontend: [
-      { icon: <FaReact />, nombre: "React" },
-      { icon: <SiRedux />, nombre: "Redux" },
-      { icon: <FaHtml5 />, nombre: "HTML5" },
-      { icon: <FaCss3Alt />, nombre: "CSS3" },
-      { icon: <FaBootstrap />, nombre: "Bootstrap" },
-      { icon: <SiTailwindcss />, nombre: "Tailwind CSS" },
-    ],
     "Bases de Datos": [
       { icon: <SiPostgresql />, nombre: "PostgreSQL" },
       { icon: <SiMongodb />, nombre: "MongoDB" },
-      { icon: <DiMsqlServer />, nombre: "SQL Server" },
       { icon: <SiMysql />, nombre: "MySQL" },
-      { icon: <FaDatabase />, nombre: "PL/pgSQL" },
+      { icon: <FaDatabase />, nombre: "Firestore" },
     ],
-    "DevOps y Cloud": [
-      { icon: <FaGoogle />, nombre: "Google Cloud" },
+    "Backend": [
+      { icon: <FaNodeJs />, nombre: "Node.js" },
+      { icon: <SiTypescript />, nombre: "NestJS" },
+      { icon: <SiExpress />, nombre: "Express.js" },
+      { icon: <SiPhp />, nombre: "PHP" },
+      { icon: <SiLaravel />, nombre: "Laravel" },
+      { icon: <FaServer />, nombre: "Parse Server" },
+    ],
+    "Frontend": [
+      { icon: <FaReact />, nombre: "React.js" },
+      { icon: <FaServer />, nombre: "Next.js" },
+      { icon: <SiRedux />, nombre: "Redux" },
+      { icon: <SiTailwindcss />, nombre: "Tailwind CSS" },
+      { icon: <FaHtml5 />, nombre: "HTML5" },
+      { icon: <FaCss3Alt />, nombre: "CSS3" },
+    ],
+    "Cloud & DevOps": [
+      { icon: <FaGoogle />, nombre: "AWS" },
+      { icon: <FaGoogle />, nombre: "Azure" },
+      { icon: <FaGoogle />, nombre: "GCP" },
       { icon: <FaDocker />, nombre: "Docker" },
+      { icon: <FaServer />, nombre: "Kubernetes" },
+    ],
+    "Automatización": [
+      { icon: <FaGithub />, nombre: "n8n" },
+      { icon: <FaGithub />, nombre: "Zapier" },
+      { icon: <FaGithub />, nombre: "Zoho" },
+      { icon: <FaGithub />, nombre: "Clientify" },
     ],
     "Control de Versiones": [
       { icon: <FaGithub />, nombre: "GitHub" },
       { icon: <FaGitlab />, nombre: "GitLab" },
-      { icon: <SiGitea />, nombre: "Gitea" },
-      { icon: <BsGit />, nombre: "GitFlow" },
-      { icon: <DiTerminal />, nombre: "GitBash" },
+      { icon: <BsGit />, nombre: "Git" },
     ],
     "APIs y Testing": [
       { icon: <SiPostman />, nombre: "Postman" },
@@ -124,7 +129,7 @@ function Home() {
     ],
     "Diseño y Colaboración": [
       { icon: <SiFigma />, nombre: "Figma" },
-      { icon: <FaPenNib />, nombre: "Scalidraw" },
+      { icon: <FaPenNib />, nombre: "Excalidraw" },
     ],
     "Sistemas Operativos": [
       { icon: <FaLinux />, nombre: "Linux" },
@@ -135,6 +140,11 @@ function Home() {
       { icon: <SiClickup />, nombre: "ClickUp" },
       { icon: <FaTrello />, nombre: "Trello" },
       { icon: <SiJira />, nombre: "Jira" },
+    ],
+    "Business Intelligence": [
+      { icon: <FaDatabase />, nombre: "Power BI" },
+      { icon: <FaDatabase />, nombre: "BigQuery" },
+      { icon: <FaDatabase />, nombre: "DataQuery" },
     ],
   };
 
